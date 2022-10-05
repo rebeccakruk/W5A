@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    background-image: linear-gradient(aqua,yellow);
+}
+
 #logo {
     width: 150px;
     display: block;
@@ -10,9 +14,24 @@
     margin-right: auto;
 }
 
+@keyframes logo {
+    100% {
+        transform: rotate(-180deg)
+    }
+
+    50% {
+        transform: rotate(-180deg)
+    }
+}
+
+#logo:hover {
+    animation: math 2s ease-in-out;
+}
+
 h1 {
     color: rebeccapurple;
     background-color: darkgrey;
+    font-size: 5rem;
     margin: 25px;
     transition: color 1s ease-in-out;
     text-align: center;
@@ -81,6 +100,6 @@ footer {
     }
 }
 
-img:active {
+#math:active {
     animation: math 2s ease-in-out;
 }
